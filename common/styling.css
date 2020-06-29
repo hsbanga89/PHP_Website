@@ -12,8 +12,8 @@ body {
 .nav {
     position: absolute;
     background-color: #404040;
-    top: 80px;
-    left: 275px;
+    top: 5%;
+    left: 20%;
     padding: 0 0 0 5px;
     list-style-type: none;
     border-top: 2px solid #22680f;
@@ -42,7 +42,7 @@ body {
 .bodyBox {
     color: #000000;
     text-align: center;
-    margin: 12% auto 0 auto;
+    margin: 8% 0 0 20%;
     width: 980px;
 }
 
@@ -60,7 +60,7 @@ body {
 /*------------------------products.php - CSS-------------------------*/
 .FormPs {
     text-align: left;
-    margin: 10% auto 0 auto;
+    margin: 8% 0 0 20%;
     width: 980px;
 }
 
@@ -97,7 +97,7 @@ body {
 }
 
 .outerBoxPs {
-    height: 300px;
+    height: 330px;
     overflow-y: auto;
 }
 
@@ -106,12 +106,26 @@ body {
 }
 
 .divTablePs {
-    height: 230px;
+    height: 263px;
     overflow-y: auto;
 }
 
 .divTablePs::-webkit-scrollbar {
-    display: none;
+    width: 10px;
+}
+
+.divTablePs::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #808080;
+    border-radius: 10px;
+}
+
+.divTablePs::-webkit-scrollbar-thumb {
+    background: rgb(153, 149, 149);
+    border-radius: 10px;
+}
+
+.divTablePs::-webkit-scrollbar-thumb:hover {
+    background: #535353;
 }
 
 /*-------------------------------------------------*/
@@ -119,7 +133,7 @@ body {
 /*------------------------addProducts.php - CSS-------------------------*/
 .FormAP {
     text-align: left;
-    margin: 10% auto 0 auto;
+    margin: 8% 0 0 20%;
     width: 980px;
 }
 
@@ -138,7 +152,7 @@ body {
 }
 
 .outerBoxAP {
-    height: 300px;
+    height: 330px;
     overflow-y: auto;
     padding: 0;
 }
@@ -148,7 +162,7 @@ body {
 /*------------------------search.php - CSS-------------------------*/
 .formSh {
     text-align: left;
-    margin: 10% auto 0 auto;
+    margin: 8% 0 0 20%;
     padding: 0;
     width: 980px;
 }
@@ -168,7 +182,7 @@ body {
 }
 
 .outerBoxSh {
-    height: 300px;
+    height: 330px;
     overflow-y: auto;
     width: 910px;
 }
@@ -177,12 +191,12 @@ body {
 
 /*------------------------profile.php - CSS-------------------------*/
 .formPf {
-    margin: 10% auto 0 auto;
+    margin: 8% 0 0 20%;
     width: 980px;
 }
 
 .outerBoxPf {
-    height: 300px;
+    height: 330px;
     overflow-y: auto;
 }
 
@@ -195,7 +209,7 @@ body {
 /*------------------------register.php - CSS-------------------------*/
 .formReg {
     text-align: left;
-    margin: 10% auto 0 auto;
+    margin: 8% 0 0 20%;
     width: 980px;
 }
 
@@ -214,7 +228,7 @@ body {
 }
 
 .outerBoxReg {
-    height: 300px;
+    height: 330px;
     overflow-y: auto;
 }
 
@@ -223,7 +237,7 @@ body {
 /*------------------------login.php - CSS-------------------------*/
 .signInLg {
     text-align: left;
-    margin: 10% auto 0 auto;
+    margin: 8% 0 0 20%;
     width: 980px;
 }
 
@@ -242,7 +256,7 @@ body {
 }
 
 .outerBoxLg {
-    height: 300px;
+    height: 330px;
     overflow-y: auto;
     width: 910px;
 }
@@ -252,12 +266,12 @@ body {
 /*------------------------logout.php - CSS-------------------------*/
 .MsgLout {
     text-align: left;
-    margin: 10% auto 0 auto;
+    margin: 8% 0 0 20%;
     width: 980px;
 }
 
 .MsgOut {
-    height: 300px;
+    height: 330px;
     overflow-y: auto;
     width: 910px;
 }
@@ -267,8 +281,8 @@ body {
 /*------------------------Footer - Common CSS-------------------------*/
 footer {
     position: absolute;
-    top: 465px;
-    left: 275px;
+    top: 65%;
+    left: 20%;
     width: 980px;
     height: 105px;
 }
