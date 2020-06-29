@@ -21,9 +21,9 @@ require_once('common/sql-connect.php');
 include "common/header.php";
 ?>
 
-<form class="viewForm">
+<form class="formVw" style="margin: 8% 0 0 20%">
     <fieldset>
-        <div class="outerBox">
+        <div class="outerBoxVw">
             <h2 style="margin:10px 0 5px 0;">Product Details</h2>
             <?php ErrorCheck(); ?>
 
@@ -34,13 +34,13 @@ include "common/header.php";
             $dbAdapter = mysqli_query($dbConnect, $query);
 
             echo "<style>";
-            echo "form.viewForm { text-align: left; margin: 10% auto 0 auto; padding:0; width: 980px; }";
+            echo ".formVw { text-align: left; margin: 10% auto 0 auto; padding:0; width: 980px; }";
             echo "table { border-collapse:collapse; border:1px solid white; margin: 10px auto; background-color:black; color:white; }";
             echo "table tr { border:1px solid white; }";
             echo "table tr th { padding:5px 15px; border:1px solid white; text-align:center; }";
             echo "table tr td { text-align:center; color:#000000; background-color:#cfcfcf; border:1px solid white; }";
-            echo ".outerBox::-webkit-scrollbar { display:none; }";
-            echo ".outerBox { height:300px; overflow-y:auto; width:910px; }";
+            echo ".outerBoxVw::-webkit-scrollbar { display:none; }";
+            echo ".outerBoxVw { height:300px; overflow-y:auto; width:910px; }";
             echo "</style>";
             echo "<table>";
             while ($proItems = mysqli_fetch_array($dbAdapter)) {

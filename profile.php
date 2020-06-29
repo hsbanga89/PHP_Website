@@ -43,13 +43,13 @@ include "common/header.php";
                     echo 'table tr th { padding:5px 25px; border:1px solid #e6e9ed; text-align:center; }';
                     echo 'table tr td { text-align:center; padding:5px 25px; color:#000000; background-color:#cfcfcf; border:1px solid #e6e9ed; }';
                     echo '.updateButton { width: 150px; }';
-                    echo '.updateEnclosure { float:right; width:350px; text-align:center; margin-right:50px; }';
+                    echo '.updateEnclosure { float:right; width:360px; text-align:center; margin-right:40px; }';
                     echo '.updateInputBox input { margin:2px 50px 2px 0; }';
                     echo '.outerBox { height:300px; overflow-y:auto; width:910px; }';
                     echo '.profile { background-color:#990b25; }';
                     echo '</style>';
 
-                    echo '<div style="float:left; width:350px; margin-left:50px;">';
+                    echo '<div style="float:left; width:350px; margin-left:40px;">';
                     echo "<table>";
                     echo "<tr> <th> User ID </th>";
                     echo "<td>" . $profileData['userId'] . "</td> </tr>";
