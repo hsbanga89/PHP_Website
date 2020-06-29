@@ -21,7 +21,7 @@ if (isset($_POST['submit'])) {
             $_SESSION['user-name'] = $user;
             setcookie('candiesUser', $user, time() + 60 * 60);     // One Hour Session
 //            header("Location: index.php");
-            redirectTo(0.1, 'index.php');
+            redirectTo(0.1, 'profile.php');
         }
     }
 }
