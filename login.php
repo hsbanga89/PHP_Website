@@ -45,12 +45,12 @@ if (isset($_POST['submit'])) {
 include "common/header.php";
 ?>
 
-<form class="signInLg" action="login.php" method="post">
+<form class="outerForm" action="login.php" method="post">
     <fieldset>
-        <div class="outerBoxLg">
+        <div class="divFirst">
             <h2 style="margin:10px 0 5px 0;">Sign In</h2>
             <?php ErrorCheck(); ?> <!-- # Database Connection Check - sql-connect.php Function # -->
-            <table class="tableLg">
+            <table class="tableFirst">
                 <tr>
                     <td> E-mail : <input style="margin-left:26px; width:175px;" type="email" name="user" value=""></td>
                 </tr>
@@ -59,11 +59,11 @@ include "common/header.php";
                                            value=""></td>
                 </tr>
             </table>
-            <table class="buttonsLg">
+            <table class="tableSecond">
                 <tr>
                     <td>
-                        <input class="buttonLg" type="reset" name="reset" value="Reset">
-                        <input class="buttonLg" type="submit" name="submit" value="Sign In">
+                        <input class="buttonRS" type="reset" name="reset" value="Reset">
+                        <input class="buttonRS" type="submit" name="submit" value="Sign In">
                     </td>
                 </tr>
             </table>
@@ -76,29 +76,9 @@ include "common/header.php";
     </fieldset>
 </form>
 
-<footer>
-    <div class="foot_links">
-        <a href="index.php">Home</a> |
-        <a href="details.php">Details</a> |
-        <a href="gallery.php">Gallery</a> |
-        <a href="contact.php">Contact Us</a>
-    </div>
-    <div class="contact">
-        Harpreet Singh<br/>
-        Contact No.: (+61) 400 900 400<br/>
-        Address: 1 Some Street, Suburb VIC 1234
-    </div>
-    <div class="icons">
-        <a href="https://www.facebook.com/" target="_blank"><img src="layout/Facebook.png"/></a>
-        <!-- Source : https://www.vecteezy.com/ -->
-        <a href="https://www.twitter.com/" target="_blank"><img src="layout/Twitter.png"/></a>
-        <!-- Source : https://www.vecteezy.com/ -->
-        <a href="https://www.youtube.com/" target="_blank"><img src="layout/YouTube.png"/></a>
-        <!-- Source : https://www.vecteezy.com/ -->
-        <a href="https://www.instagram.com/" target="_blank"><img src="layout/Instagram.png"/></a>
-        <!-- Source : https://www.vecteezy.com/ -->
-    </div>
-    <span class="copyright">© 2019-2020 Harpreet Singh. All rights reserved.</span>
-</footer>
+<?php
+include "common/footer.php";
+?>
+
 </body>
 </html>

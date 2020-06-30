@@ -35,22 +35,24 @@ if (isset($_SESSION['user-name']) && isset($_COOKIE['candiesUser'])) {
 include "common/header.php";
 ?>
 
-<form class="formSh" action="search.php" method="post">
+<form class="outerForm" action="search.php" method="post">
     <fieldset>
-        <div class="outerBoxSh">
+        <div class="divFirst">
             <h2 style="margin:10px 0 5px 0;">Product Search</h2>
             <?php ErrorCheck(); ?>
-            <table>
+            <table class="tableFirst">
                 <tr>
-                    <td> Enter Product Name : <input style="margin-left:5px; width:175px;" type="text" name="searchText"
-                                                     value=""></td>
+                    <td>Enter Product Name</td>
+
+                    <td><input style="margin-left:5px; width:175px;" type="text" name="searchText"
+                               value=""></td>
                 </tr>
             </table>
-            <table class="buttonsSh">
+            <table class="tableSecond">
                 <tr>
                     <td>
-                        <input class="buttonSh" type="reset" name="reset" value="Reset">
-                        <input class="buttonSh" type="submit" name="submit" value="Search">
+                        <input class="buttonRS" type="reset" name="reset" value="Reset">
+                        <input class="buttonRS" type="submit" name="submit" value="Search">
                     </td>
                 </tr>
             </table>
@@ -62,10 +64,9 @@ include "common/header.php";
             if (isset($dbAdapter)) {
                 if (mysqli_num_rows($dbAdapter) > 0) {
                     echo "<style>";
-                    echo ".searchTable {border-collapse:collapse; width:860px; resize:none; border:1px solid white; background-color:black; color:white; margin-left:33px;}";
-                    echo ".searchTr {border:1px solid white;}";
-                    echo ".searchTh {padding:5px 15px; border:1px solid white; text-align:center;}";
-                    echo ".searchTd {text-align:center; background-color:grey; border:1px solid white;}";
+                    echo ".searchTable { border-collapse:collapse; width:90%; resize:none; border:1px solid white; background-color:rgba(0, 0, 0, 0.99); color:white; margin:1% auto 0 auto }";
+                    echo ".searchTh { padding:5px 15px; border:1px solid white; text-align:center }";
+                    echo ".searchTd { text-align:center; background-color:#cfcfcf; color:black; border:1px solid white }";
                     echo "</style>";
                     echo '<table class="searchTable">';
                     echo '<tr class="searchTr">';
@@ -90,29 +91,9 @@ include "common/header.php";
     </fieldset>
 </form>
 
-<footer>
-    <div class="foot_links">
-        <a href="index.php">Home</a> |
-        <a href="details.php">Details</a> |
-        <a href="gallery.php">Gallery</a> |
-        <a href="contact.php">Contact Us</a>
-    </div>
-    <div class="contact">
-        Harpreet Singh<br/>
-        Contact No.: (+61) 400 900 400<br/>
-        Address: 1 Some Street, Suburb VIC 1234
-    </div>
-    <div class="icons">
-        <a href="https://www.facebook.com/" target="_blank"><img src="layout/Facebook.png"/></a>
-        <!-- Source : https://www.vecteezy.com/ -->
-        <a href="https://www.twitter.com/" target="_blank"><img src="layout/Twitter.png"/></a>
-        <!-- Source : https://www.vecteezy.com/ -->
-        <a href="https://www.youtube.com/" target="_blank"><img src="layout/YouTube.png"/></a>
-        <!-- Source : https://www.vecteezy.com/ -->
-        <a href="https://www.instagram.com/" target="_blank"><img src="layout/Instagram.png"/></a>
-        <!-- Source : https://www.vecteezy.com/ -->
-    </div>
-    <span class="copyright">© 2019-2020 Harpreet Singh. All rights reserved.</span>
-</footer>
+<?php
+include "common/footer.php";
+?>
+
 </body>
 </html>

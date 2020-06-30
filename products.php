@@ -21,14 +21,14 @@ require_once('common/sql-connect.php');
 include "common/header.php";
 ?>
 
-<form class="FormPs">
+<form class="outerForm">
     <fieldset>
-        <div class="outerBoxPs">
+        <div class="divFirstProducts">
             <?php ErrorCheck(); ?>
             <h2 style="margin:10px 0 5px 0;">Products List</h2>
-            <div class="addPs"><a href="addProducts.php">Add Product</a></div>
-            <div class="divTablePs">
-                <table class="tablePs">
+            <div class="addProductsLink"><a href="addProducts.php">Add Product</a></div>
+            <div class="divSecondProducts">
+                <table class="tableFirstProducts">
                     <?php
                     if (isset($_SESSION['user-name']) && isset($_COOKIE['candiesUser'])) {
                         $products = "SELECT * FROM products";
@@ -63,29 +63,9 @@ include "common/header.php";
     </fieldset>
 </form>
 
-<footer>
-    <div class="foot_links">
-        <a href="index.php">Home</a> |
-        <a href="details.php">Details</a> |
-        <a href="gallery.php">Gallery</a> |
-        <a href="contact.php">Contact Us</a>
-    </div>
-    <div class="contact">
-        Harpreet Singh<br/>
-        Contact No.: (+61) 400 900 400<br/>
-        Address: 1 Some Street, Suburb VIC 1234
-    </div>
-    <div class="icons">
-        <a href="https://www.facebook.com/" target="_blank"><img src="layout/Facebook.png"/></a>
-        <!-- Source : https://www.vecteezy.com/ -->
-        <a href="https://www.twitter.com/" target="_blank"><img src="layout/Twitter.png"/></a>
-        <!-- Source : https://www.vecteezy.com/ -->
-        <a href="https://www.youtube.com/" target="_blank"><img src="layout/YouTube.png"/></a>
-        <!-- Source : https://www.vecteezy.com/ -->
-        <a href="https://www.instagram.com/" target="_blank"><img src="layout/Instagram.png"/></a>
-        <!-- Source : https://www.vecteezy.com/ -->
-    </div>
-    <span class="copyright">© 2019-2020 Harpreet Singh. All rights reserved.</span>
-</footer>
+<?php
+include "common/footer.php";
+?>
+
 </body>
 </html>

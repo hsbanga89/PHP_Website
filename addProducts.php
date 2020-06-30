@@ -64,12 +64,12 @@ if (isset($_SESSION['user-name']) && isset($_COOKIE['candiesUser'])) {
 include "common/header.php";
 ?>
 
-<form class="FormAP" method="post" enctype="multipart/form-data">
+<form class="outerForm" method="post" enctype="multipart/form-data">
     <fieldset>
-        <div class="outerBoxAP">
+        <div class="divFirst">
             <h2 style="margin:10px 0 5px 0;">Add Product</h2>
             <?php ErrorCheck(); ?>
-            <table class="tableAP">
+            <table class="tableFirst">
                 <tr>
                     <td><label for="productName"> Product Name : </label>
                         <input class="productName" style="margin-left:41px; width:300px;" type="text" name="productName"
@@ -83,11 +83,11 @@ include "common/header.php";
                                   required></textarea></td>
                 </tr>
             </table>
-            <table class="buttonsAP">
+            <table class="tableSecond">
                 <tr>
                     <td>
-                        <input class="buttonAP" type="reset" name="reset" value="Reset">
-                        <input class="buttonAP" type="submit" name="addProduct" value="Add Product">
+                        <input class="buttonRS" type="reset" name="reset" value="Reset">
+                        <input class="buttonRS" type="submit" name="addProduct" value="Add Product">
                     </td>
                 </tr>
             </table>
@@ -99,29 +99,9 @@ include "common/header.php";
     </fieldset>
 </form>
 
-<footer>
-    <div class="foot_links">
-        <a href="index.php">Home</a> |
-        <a href="details.php">Details</a> |
-        <a href="gallery.php">Gallery</a> |
-        <a href="contact.php">Contact Us</a>
-    </div>
-    <div class="contact">
-        Harpreet Singh<br/>
-        Contact No.: (+61) 400 900 400<br/>
-        Address: 1 Some Street, Suburb VIC 1234
-    </div>
-    <div class="icons">
-        <a href="https://www.facebook.com/" target="_blank"><img src="layout/Facebook.png"/></a>
-        <!-- Source : https://www.vecteezy.com/ -->
-        <a href="https://www.twitter.com/" target="_blank"><img src="layout/Twitter.png"/></a>
-        <!-- Source : https://www.vecteezy.com/ -->
-        <a href="https://www.youtube.com/" target="_blank"><img src="layout/YouTube.png"/></a>
-        <!-- Source : https://www.vecteezy.com/ -->
-        <a href="https://www.instagram.com/" target="_blank"><img src="layout/Instagram.png"/></a>
-        <!-- Source : https://www.vecteezy.com/ -->
-    </div>
-    <span class="copyright">© 2019-2020 Harpreet Singh. All rights reserved.</span>
-</footer>
+<?php
+include "common/footer.php";
+?>
+
 </body>
 </html>
