@@ -18,9 +18,9 @@ INSERT INTO `accounts` (`userId`, `email`, `password`, `firstName`, `lastName`, 
 
 CREATE TABLE `products` (
   `productId` int(10) NOT NULL,
-  `productName` text NOT NULL,
+  `productName` varchar(255) NOT NULL,
   `productDescription` text NOT NULL,
-  `productImage` text NOT NULL
+  `productImage` varchar(125) NOT NULL
 );
 
 INSERT INTO `products` (`productId`, `productName`, `productDescription`, `productImage`) VALUES
