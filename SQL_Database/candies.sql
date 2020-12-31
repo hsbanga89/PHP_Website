@@ -44,6 +44,8 @@ ALTER TABLE `accounts`
 
 ALTER TABLE `products`
   MODIFY `productId` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=42;
-COMMIT;
 
-GRANT ALL PRIVILEGES ON `candies`.* TO 'user'@'localhost' WITH GRANT OPTION;
+GRANT ALL PRIVILEGES ON `candies`.* TO 'user'@'%';
+
+FLUSH PRIVILEGES;
+
