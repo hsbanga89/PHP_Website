@@ -1,5 +1,5 @@
 <?php
-$dbConnect = new mysqli('localhost', 'hsbanga89', 'Xyz12345*', 'candies');
+$dbConnect = new mysqli('192.168.1.231', 'hstest3bsql', 'H41r4nhu4*', 'candies');
 
 function ErrorCheck()
 {
